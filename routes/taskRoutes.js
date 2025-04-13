@@ -14,6 +14,6 @@ router
   .route("/:id")
   .put(protect, updateTask)
   .delete(protect, deleteTask)
-  .get(protect, getSingleTask);
+  .get(getSingleTask);
 
 module.exports = router;
